@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Paint</title>
+  <style>
+    canvas {
+      border: 1px solid #000;
+    }
+  </style>
+</head>
+<body>
+    <canvas id="paintCanvas" width="800" height="600"></canvas>
+    <br>
+    <button onclick="clearCanvas()">Clear Canvas</button>
+    <button onclick="saveCanvas()">Save Image</button>
+    <br>
+    <label for="brushType">Brush Type:</label>
+    <select id="brushType" onchange="changeBrushType()">
+      <option value="round">Round</option>
+      <option value="square">Square</option>
+    </select>
+    <br>
+    <label for="brushSize">Brush Size:</label>
+    <input type="range" id="brushSize" min="1" max="50" value="10">
+    <br>
+    <label for="colorPicker">Brush Color:</label>
+    <input type="color" id="colorPicker" value="#000000">
+    <br>
+    <label for="Transparency">Transparency</label>
+    <input type="range" id="Transparency" min="1" max="100" value="1">
+    <br>
+</body>
+<script src = "script.js"></script>
+</html>
